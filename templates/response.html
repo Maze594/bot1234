@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+</head>
+<body>
+    {% if entries|length > 0 %}
+        {% for entry in entries %}
+            <p>{{ entry }}</p>
+        {% endfor %}
+    {% else %}
+        <b style="color: red;">Ничего не найдено</b>
+    {% endif %}
+</body>
+</html>

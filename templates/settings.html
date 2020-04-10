@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Параметры бота</title>
+</head>
+<body>
+    <form method="post">
+        <h1>Параметры бота</h1>
+        <label>Количество првильных ответов, после которого слово считается выученным: <input type="text" name="right_answer_count" value="{{right_answer_count}}"></label><br>
+        <label>Количество слов в одном раунде заучивания: <input type="text" name="test_length" value="{{test_length}}"></label><br>
+        <h1>Параметры планировщика</h1>
+        <label>Время, через которое бот будет напоминать о необходимости повторить слова (в минутах): <input type="text" name="interval" value="{{interval}}"></label><br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

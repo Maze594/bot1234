@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viber_debug</title>
+</head>
+<body>
+    <form method="post">
+        <label><input name="message" type="text"/></label><br>
+    </form>
+    {% if text is not none %}
+        <div>
+            <h3>text</h3>
+            <pre>{{ text }}</pre>
+        </div>
+    {% endif %}
+    {% if buttons is not none %}
+        <div>
+            <h3>buttons</h3>
+            <pre>{{ buttons }}</pre>
+        </div>
+    {% endif %}
+</body>
+</html>
